@@ -306,9 +306,9 @@ def _instrument(
                 # https://docs.aws.amazon.com/lambda/latest/dg/with-ddb.html
                 span_kind = SpanKind.CONSUMER
             else:
-                span_kind = SpanKind.SERVER
+                span_kind = SpanKind.INTERNAL
         except (IndexError, KeyError, TypeError):
-            span_kind = SpanKind.SERVER
+            span_kind = SpanKind.INTERNAL
 
         tracer = get_tracer(
             __name__,
