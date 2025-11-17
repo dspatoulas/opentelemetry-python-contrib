@@ -392,6 +392,9 @@ def _apply_request_client_attributes_to_span(
         semconv,
     )
 
+    # Set for XRay
+    span_attributes["peer.service"] = url.host
+
     if _report_old(semconv):
         # TODO: Support opt-in for url.scheme in new semconv
         _set_http_scheme(metric_attributes, url.scheme, semconv)
