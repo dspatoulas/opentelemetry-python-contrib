@@ -77,10 +77,10 @@ required-version = ">=0.6.0"
 
 # https://docs.astral.sh/uv/reference/settings/#sources
 [tool.uv.sources]
-opentelemetry-api = { git = "https://github.com/open-telemetry/opentelemetry-python", branch = "main", subdirectory = "opentelemetry-api" }
-opentelemetry-sdk = { git = "https://github.com/open-telemetry/opentelemetry-python", branch = "main", subdirectory = "opentelemetry-sdk" }
-opentelemetry-semantic-conventions = { git = "https://github.com/open-telemetry/opentelemetry-python", branch = "main", subdirectory = "opentelemetry-semantic-conventions" }
-opentelemetry-test-utils = { git = "https://github.com/open-telemetry/opentelemetry-python", branch = "main", subdirectory = "tests/opentelemetry-test-utils" }
+opentelemetry-api = { git = "https://github.com/open-telemetry/opentelemetry-python", tag = "v1.38.0", subdirectory = "opentelemetry-api" }
+opentelemetry-sdk = { git = "https://github.com/open-telemetry/opentelemetry-python", branch = "v1.38.0", subdirectory = "opentelemetry-sdk" }
+opentelemetry-semantic-conventions = { git = "https://github.com/open-telemetry/opentelemetry-python", branch = "v1.38.0", subdirectory = "opentelemetry-semantic-conventions" }
+opentelemetry-test-utils = { git = "https://github.com/open-telemetry/opentelemetry-python", branch = "v1.38.0", subdirectory = "tests/opentelemetry-test-utils" }
 opentelemetry-exporter-prometheus-remote-write = { workspace = true }
 opentelemetry-exporter-richconsole = { workspace = true }
 opentelemetry-instrumentation = { workspace = true }
